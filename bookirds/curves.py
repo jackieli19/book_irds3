@@ -339,7 +339,7 @@ class Swap(Covar_, PCA_, Margin_):
 
 class Swap2(Swap, Gamma_):
     def __init__(self, *args, **kwargs):
-       super().__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
 
     def rate(self, curve: Curve, disc_curve: Curve = None):
         disc_curve = disc_curve or curve
